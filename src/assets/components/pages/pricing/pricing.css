@@ -1,0 +1,50 @@
+.pricing {
+  text-align: center;
+  max-width: 1125px;
+  margin: 0 auto;
+}
+.pricingcard {
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  border-radius: 25px;
+}
+.pricingcard h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.pricingcard h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 28px;
+}
+.pricingcard h4 {
+  text-align: center;
+  font-size: 18px;
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.pricingcard ul {
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+}
+.pricingcard svg {
+  width: 19px;
+  height: 19px;
+  color: #28c76f;
+}
+.pricingcard ul li {
+  display: flex;
+  align-items: center;
+}
+.pricingcard ul li p {
+  font-size: 17px;
+  line-height: 40px;
+  color: #6c757d;
+  margin-left: 10px;
+}

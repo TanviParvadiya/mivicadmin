@@ -1,0 +1,23 @@
+.checkout .MuiStepLabel-iconContainer svg {
+  /* background-color: rebeccapurple; */
+  color: #081f55;
+}
+.checkout .MuiInput-underline:after {
+  border-bottom: 2px solid #081f55;
+}
+.checkout .MuiGrid-item {
+  margin-top: 15px;
+  /* margin: 15px; */
+  padding: 0 15px;
+}
+.Checkout-button-6:hover {
+  background-color: #526288 !important;
+}
+.checkout .MuiPaper-elevation1 {
+box-shadow: 2px 0px 10px 0px rgb(0 0 0 / 12%) ;
+border-radius: 12px;
+padding: 20px;
+}
+.MuiFormLabel-root.Mui-focused{
+  color: #081f55 !important;
+}

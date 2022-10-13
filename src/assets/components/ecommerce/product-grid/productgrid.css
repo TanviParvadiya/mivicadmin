@@ -1,0 +1,59 @@
+.productgrid .progridcard {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  /* background-color: palegoldenrod; */
+  padding: 20px;
+  text-align: center;
+}
+.progridcard img {
+  /* border-radius: 10px; */
+  border-bottom: 1px dotted #e5e5e5;
+}
+.productgrid img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.progridcard .ratingstar {
+  color: #ffc107;
+}
+.productgrid .pro_image {
+  position: relative;
+}
+
+.imghovereffect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.6s ease 0s;
+  max-width: 100%;
+  opacity: 0;
+  z-index: 0;
+}
+.cardeffect:hover .imghovereffect {
+  opacity: 1;
+  overflow: hidden;
+  transition: all 0.6s ease 0s;
+}
+.cardeffect {
+  position: relative;
+}
+.progridcardbody h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #081f55;
+}
+.progridcard .checkoutPrice{
+    /* display: flex; */
+}
+.progridcard .checkoutPrice .currentPrice {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.progridcard .checkoutPrice del{
+    font-size: 14px;
+/* text-decoration: underline; */
+}

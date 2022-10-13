@@ -1,0 +1,110 @@
+.blog img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+}
+.smlsideblog .blogdate {
+  display: flex;
+}
+.smlsideblog .blogdate h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-right: 5px;
+  color: #081f55;
+  line-height: 1;
+}
+.smlsideblog .blogdate span {
+  color: rgba(36, 41, 52, 0.7);
+}
+.smlsideblog h6 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #081f55;
+  margin-top: 10px;
+}
+.smlsideblog .adminby ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  margin: 5px -15px;
+}
+.smlsideblog .adminby ul li {
+  color: #999;
+  padding: 0 15px;
+  border-right: 1px solid #e5e5e5;
+}
+.smlsideblog .adminby ul li:last-child {
+  border-right: none;
+}
+.smlsideblog p {
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.7px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #999;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 10px;
+}
+.smllscdblog .blog-details-second {
+  padding: 20px;
+}
+.smllscdblog .blog-details-second .blog-post-date {
+  margin-top: -54px;
+  z-index: 2;
+  position: relative;
+}
+.smllscdblog .blog-details-second .blog-post-date .blg-month,
+.smllscdblog .blog-details-second .blog-post-date .blg-date {
+  padding: 5px;
+  display: block;
+  width: 50px;
+  font-size: 12px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 600;
+}
+.smllscdblog .blog-details-second .blog-post-date .blg-month {
+  background-color: #081f55;
+}
+.smllscdblog .blog-details-second .blog-post-date .blg-date {
+  background-color: #526288;
+}
+.smllscdblog h6 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: #081f55;
+  font-weight: 600;
+}
+.smllscdblog p {
+  color: #999;
+  font-size: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 10px;
+}
+.cardblog-footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.cardblog-footer ul li span{
+    margin-left: 7px;
+}
+.smllscdblog {
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+.smllscdblog img{
+    border-radius: 5px 5px 0 0;
+}
+.smllscdblog .cardblog-footer ul li svg{
+    width: 17px;
+    height: 17px;
+}

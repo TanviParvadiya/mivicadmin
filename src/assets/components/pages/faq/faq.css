@@ -1,0 +1,33 @@
+/* .faq .MuiPaper-elevation0,
+.MuiPaper-elevation {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+} */
+.faq .css-1fjvggn-MuiPaper-root-MuiAccordion-root.Mui-expanded:first-of-type {
+  /* margin-top: 15px; */
+}
+.faq .css-uvvswg-MuiButtonBase-root-MuiAccordionSummary-root {
+  /* background-color: #081F55; */
+  background-color: #fff;
+  /* color: #fff; */
+}
+.faq .Mui-expanded.MuiAccordionSummary-expandIconWrapper svg {
+  fill: #fff;
+}
+.faq .defultheading {
+  margin-bottom: 15px;
+}
+.faq .Mui-expanded.css-uvvswg-MuiButtonBase-root-MuiAccordionSummary-root {
+  background-color: #081f55;
+  color: #fff;
+}
+.faq .MuiAccordion-root {
+  margin: 15px 0;
+}
+.faq .css-1fjvggn-MuiPaper-root-MuiAccordion-root:not(:last-child) {
+  border-bottom:1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* MuiButtonBase-root MuiAccordionSummary-rootcss-uvvswg-MuiButtonBase-root-MuiAccordionSummary-root
+MuiButtonBase-root MuiAccordionSummary-root css-uvvswg-MuiButtonBase-root-MuiAccordionSummary-root */

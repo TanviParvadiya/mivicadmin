@@ -1,0 +1,68 @@
+.error {
+  display: none;
+}
+.error.active {
+  display: block;
+  color: red;
+}
+
+.fade-out {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s 0.5s, opacity 0.5s;
+}
+.todo-input {
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  width: 100%;
+}
+.todo-subtitle {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dotted #e5e5e5;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.todo-subtitle svg {
+  height: 30px;
+  width: 30px;
+  fill: #fff;
+}
+.todo-svg-bg {
+  padding: 10px;
+  display: flex;
+  border-radius: 50px;
+}
+.todo-subtitle h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #081f55;
+  margin-left: 10px;
+}
+.todo-input .MuiButton-contained.darkbluebtn {
+  background-color: #081f55;
+  color: #fff;
+  box-shadow: none;
+}
+.todo-schedulelist .todo-sche-list p {
+  background-color: #f8f9fa;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.inputedtodo .todo-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dotted #e5e5e5;
+  /* margin: 5px 0; */
+  padding: 5px 0;
+}
+.inputedtodo:last-child .todo-flex{
+  border-bottom: none;
+}
+.todo-input .MuiInput-underline:after{
+  border-bottom: 2px solid #081f55;
+}

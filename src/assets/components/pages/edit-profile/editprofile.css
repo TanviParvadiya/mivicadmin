@@ -1,0 +1,62 @@
+.profileimgname {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dotted #e5e5e5;
+  padding: 10px 0 15px 0;
+  margin-bottom: 10px;
+}
+.profileimgname img {
+  width: 52px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.profileimgname h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #081f55;
+}
+.profileimgname h6 {
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.myprofile label {
+  /* font-size: 22px; */
+}
+.subeditprofile .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  width: 100%;
+}
+.input-padding .css-zow5z4-MuiGrid-root > .MuiGrid-item {
+  padding-left: 10px;
+  /* padding-top: 0; */
+  padding-right: 10px;
+}
+.input-padding .css-zow5z4-MuiGrid-root > .MuiGrid-item:last-child {
+  /* padding: 0; */
+}
+.input-padding .css-z4k887 > :not(style) {
+  margin: 0;
+}
+.input-padding .css-1ptx2yq-MuiInputBase-root-MuiInput-root:after {
+  border-bottom: 2px solid #081f55;
+}
+.subeditprofile .darkbluebtn {
+  margin-top: 50px;
+  /* text-align: right; */
+  float: right;
+}
+.myprofile .MuiFormControl-root {
+  display: block;
+  /* width: 100%; */
+}
+.bio .MuiInput-underline {
+  width: 100%;
+  /* display: inline-block; */
+}
+.bio > .MuiBox-root {
+  /* background-color: #081f55 ; */
+  display: block;
+}
+.bio .darkbluebtn { 
+  margin-top: 50px;
+}
