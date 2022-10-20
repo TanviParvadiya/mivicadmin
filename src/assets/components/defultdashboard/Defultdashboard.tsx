@@ -1,4 +1,3 @@
-
 import Grid from "@mui/material/Grid";
 import Chartax from "./todayinfo";
 import Secfchart from "./Revenue";
@@ -41,20 +40,11 @@ const Defultdashboard = () => {
         <Grid item xs={4}>
           <RecentActivity />
         </Grid>
-        <Grid item xs={11}>
+        <Grid item xs={12}>
           <Traffic />
-        </Grid>
-        <Grid item xs={1}>
-          g
         </Grid>
         <Grid item xs={8}>
           <RecentOrder />
-        </Grid>
-        <Grid item xs={4}>
-          <Donut />
-        </Grid>
-        <Grid item xs={8}>
-          <RecentOrderDemo />
         </Grid>
         <Grid item xs={4}>
           <Donut />

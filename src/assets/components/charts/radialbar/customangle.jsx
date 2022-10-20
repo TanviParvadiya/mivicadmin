@@ -1,13 +1,14 @@
 import React from "react";
 
 import ReactApexChart from "react-apexcharts";
+import CustomangleCC from "./customangleCC";
 
 class Customangle extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      series: [76, 67, 61, 90],
+      series: [76, 67, 61, 90, 59],
       options: {
         chart: {
           height: 390,
@@ -34,8 +35,8 @@ class Customangle extends React.Component {
             },
           },
         },
-        colors: ["#1ab7ea", "#0084ff", "#39539E", "#0077B5"],
-        labels: ["Vimeo", "Messenger", "Facebook", "LinkedIn"],
+        colors: ["#3b5a9a", "#00aef0", "#ffe500", "#5581a5", "#dd4c3a"],
+        labels: ["Facebook ", "Twitter", "Snapchat", "LinkedIn", "pinterest"],
         legend: {
           show: true,
           floating: true,
@@ -72,16 +73,18 @@ class Customangle extends React.Component {
 
   render() {
     return (
-        <div className="theme-box-shadow">
+      <div className="theme-box-shadow">
         <h6 className="defultheading">Custom Angle chart</h6>
-      <div id="chart">
-        <ReactApexChart
-          options={this.state.options}
-          series={this.state.series}
-          type="radialBar"
-          height={390}
-        />
-      </div></div>
+        <div id="chart">
+          <ReactApexChart
+            options={this.state.options}
+            series={this.state.series}
+            type="radialBar"
+            height={390}
+          />
+        </div>
+        <CustomangleCC/>
+      </div>
     );
   }
 }

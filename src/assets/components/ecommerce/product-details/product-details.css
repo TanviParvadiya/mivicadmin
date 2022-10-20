@@ -1,0 +1,101 @@
+.prodetailmainimg img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.prodetailmainimg div {
+  display: flex;
+}
+.prodetailmainimg div img {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+.pro-details .text-muted {
+  color: #6c757d;
+}
+.pro-details h2 {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.pro-details .text-success {
+  color: #198754;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.pro-details h5 {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 22px;
+}
+.pro-details del {
+  color: #6c757d;
+  font-size: 17px;
+  font-weight: 400;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.pro-details p {
+  color: #198754;
+  font-weight: 600;
+  font-size: 14px;
+}
+.pro-details ul {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.pro-details ul li svg {
+  height: 17px;
+  width: 17px;
+  color: #198754;
+  margin-right: 7px;
+}
+.pro-details h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.radio-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+.radio-toolbar label {
+  display: inline-block;
+  background-color: #fff;
+  padding: 6px 16px;
+  font-size: 16px;
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+.radio-toolbar input[type="radio"]:checked + label {
+  background-color: #fff;
+  border-color: #081f55;
+}
+.product_color .radio-toolbar label {
+  display: inline-block;
+  width: 48px;
+  height: 40px;
+  border-radius: 4px;
+  border-color: transparent;
+  font-size: 0;
+}
+.pro-details .sbtitle {
+  font-size: 16px;
+}
+.pro-details .sbtitle P {
+  color: #6c757d;
+  font-weight: 400;
+  font-size: 15px;
+}
+.pro-details .sbtitle P b {
+  color: #000;
+}

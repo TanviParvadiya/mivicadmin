@@ -1,5 +1,6 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import StrokedCC from "./strokedCC";
 class Stroked extends React.Component {
   constructor(props) {
     super(props);
@@ -12,7 +13,7 @@ class Stroked extends React.Component {
           type: "radialBar",
           offsetY: -10,
         },
-        colors: ["#081f55"],
+        colors: ["#2247b7"],
         plotOptions: {
           radialBar: {
             startAngle: -135,
@@ -42,8 +43,9 @@ class Stroked extends React.Component {
             inverseColors: false,
             opacityFrom: 1,
             opacityTo: 1,
-            stops: [0, 50, 65, 91],
-            
+            stops: [0, 100],
+            gradientToColors: ["#0fc1ab"],
+            type: "horizontal",                    
           },
         },
         stroke: {
@@ -66,6 +68,7 @@ class Stroked extends React.Component {
           height={350}
         />
       </div>
+      <StrokedCC/>
       </div>
     );
   }

@@ -1,36 +1,39 @@
 import React, { useEffect } from "react";
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
-
+import CopyAllIcon from "@mui/icons-material/CopyAll";
 export default function BasicradialCC() {
-  const democode = `const Line = () => {
-        return (
-          <>
-            <Grid container spacing={3}>
-              <Grid item xs={6}>
-                <Gradient />
-              </Grid>
-              <Grid item xs={6}>
-                <Brush />
-              </Grid>
-              <Grid item xs={6}>
-                h
-              </Grid>
-              <Grid item xs={6}>
-                h
-              </Grid>
-              <Grid item xs={6}>
-                j
-              </Grid>
-              <Grid item xs={6}>
-                y
-              </Grid>
-            </Grid>
-          </>
-        );
-      };
-      
-      export default Line;`;
+  const democode = ` constructor(props) {
+    super(props);
+
+    this.state = {
+      series: [70],
+      options: {
+        chart: {
+          height: 350,
+          type: "radialBar",
+        },
+        colors: ["#ff6800"],
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: "70%",
+            },
+          },
+        },
+        labels: ["Cricket"],
+      },
+    };
+  }
+  render() {
+    return (
+    
+          <ReactApexChart
+            options={this.state.options}
+            series={this.state.series}
+            type="radialBar"
+            height={350}
+          />`;
 
   useEffect(() => {
     Prism.highlightAll();
@@ -38,8 +41,17 @@ export default function BasicradialCC() {
   return (
     <>
       <div className="App">
-        <div className="Code">
+        <div className="code">
           <pre>
+            <div className="copybtn">
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(democode);
+                }}
+              >
+                <CopyAllIcon />
+              </button>
+            </div>
             <code
               data-prismjs-copy="Copy the JavaScript snippet!"
               className="language-js"
@@ -47,16 +59,6 @@ export default function BasicradialCC() {
               {democode}
             </code>
           </pre>
-
-          <div>
-            <button
-              onClick={() => {
-                navigator.clipboard.writeText(democode);
-              }}
-            >
-              Copy
-            </button>
-          </div>
         </div>
       </div>
     </>

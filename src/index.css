@@ -18,26 +18,35 @@ p {
 }
 .dflex {
   display: flex;
-  
 }
 .dflex-space-between {
   justify-content: space-between;
 }
-.flex-align-item-center{
+.flex-align-item-center {
   align-items: center;
 }
 .padding-30 {
-  padding: 30px;
+  padding: 20px 30px;
 }
 .padding-b-0 {
   padding-bottom: 0;
 }
-.padding-10-0{
-padding: 10px 0;
+.padding-10-0 {
+  padding: 10px 0;
 }
-.ul-unstyled{
+.ul-unstyled {
   padding-left: 0;
   list-style: none;
+}
+.css-ttn1xo {
+  width: calc(100vw - 300px);
+}
+.css-13k3028-MuiButtonBase-root-MuiIconButton-root{
+  display: none !important;
+}
+.fullscreen.fullscreen-enabled {
+  background: #fff;
+  overflow-y: scroll;
 }
 /* -- header  */
 .defult-headermd hr {
@@ -60,6 +69,9 @@ padding: 10px 0;
 }
 
 /* -- drawer -- */
+.adminpannal .css-78trlr-MuiButtonBase-root-MuiIconButton-root:hover{
+  background-color: transparent;
+}
 .themelogoimgdiv img {
   width: 130px;
 }
@@ -170,7 +182,8 @@ display: none;
   /* max-width: 200px; */
   /* width: 300px; */
 }
-.MuiBox-root .css-ttn1xo, .MuiBox-root .css-1pn59pd {
+.MuiBox-root .css-ttn1xo,
+.MuiBox-root .css-1pn59pd {
   padding-top: 85px;
 }
 
@@ -215,6 +228,10 @@ display: none;
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+.headerpopprofile li a {
+  color: #000;
+  text-decoration: none;
 }
 .profilesec {
   padding: 15px;
@@ -377,7 +394,7 @@ display: none;
 .css-1nxmd3h-MuiListItem-root {
   display: block;
 }
-.MuiListItem-gutters.MuiListItem-root {
+.dhashboardroutesmdiv .MuiListItem-gutters.MuiListItem-root {
   display: block;
   /* padding: 10px; */
 }
@@ -440,12 +457,14 @@ display: none;
   background-color: #081f55;
   border: none;
   min-width: 134px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
   padding: 13px 17px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 .darkbluebtn:hover {
   background-color: #526288;
@@ -795,9 +814,64 @@ display: none;
   background: purple;
 }
 /* -- clicpboard -- */
-:not(pre) > code[class*="language-"], pre[class*="language-"] {
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
   background: #f4f6fa !important;
 }
-.token.selector, .token.important, .token.atrule, .token.keyword, .token.builtin{
-  color: #000;
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+  color: #de20af !important;
+}
+
+.token.punctuation {
+  color: #938787 !important;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #938787 !important;
+}
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+  color: #905 !important;
+}
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+  color: #00bf48 !important;
+}
+.token.operator,
+.token.entity,
+.token.url {
+  color: #389796 !important;
+}
+.token.boolean,
+.token.number,
+.token.function {
+  color: #ff6800 !important;
+}
+.copybtn {
+  text-align: right;
+}
+.copybtn button {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.copybtn button svg {
+  display: flex;
+}
+.code {
+  max-height: 20rem;
+  overflow: scroll;
+  width: 100% !important;
+  margin-top: 20px;
 }

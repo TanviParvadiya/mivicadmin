@@ -1,8 +1,5 @@
 import React from "react";
-import CopyToClipboard from "@vigosan/react-copy-to-clipboard";
-import Prism from "prismjs";
 import ReactApexChart from "react-apexcharts";
-import Codae from "./basicradialCC";
 import BasicradialCC from "./basicradialCC";
 class Basicradial extends React.Component {
   constructor(props) {
@@ -15,7 +12,7 @@ class Basicradial extends React.Component {
           height: 350,
           type: "radialBar",
         },
-        colors: ["#081f55"],
+        colors: ["#ff6800"],
         plotOptions: {
           radialBar: {
             hollow: {

@@ -1,5 +1,6 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import GradientCC from "./gradientCC";
 
 class Gradient extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class Gradient extends React.Component {
             show: true,
           },
         },
-        colors: ["#d03b57"],
+        colors: ["#ff872c"],
         plotOptions: {
           radialBar: {
             startAngle: -135,
@@ -74,7 +75,7 @@ class Gradient extends React.Component {
             shade: "dark",
             type: "horizontal",
             shadeIntensity: 0.5,
-            gradientToColors: ["#081f55"],
+            gradientToColors: ["#fe612c"],
             inverseColors: true,
             opacityFrom: 1,
             opacityTo: 1,
@@ -91,18 +92,19 @@ class Gradient extends React.Component {
 
   render() {
     return (
-        <div className="theme-box-shadow">
+      <div className="theme-box-shadow">
         <h6 className="defultheading">Gradient circle chart</h6>
-      <div id="card">
-        <div id="chart">
-          <ReactApexChart
-            options={this.state.options}
-            series={this.state.series}
-            type="radialBar"
-            height={390}
-          />
+        <div id="card">
+          <div id="chart">
+            <ReactApexChart
+              options={this.state.options}
+              series={this.state.series}
+              type="radialBar"
+              height={390}
+            />
+          </div>
         </div>
-        </div>
+        <GradientCC />
       </div>
     );
   }

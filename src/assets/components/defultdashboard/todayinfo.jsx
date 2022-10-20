@@ -40,7 +40,7 @@ class Chartax extends React.Component {
   render() {
     return (
       <div id="chart" className="theme-box-shadow">
-        <h4>Today's Info ❤ </h4>
+        <h4>Today's Info </h4>
         <ReactApexChart
           options={this.state.options}
           series={this.state.series}

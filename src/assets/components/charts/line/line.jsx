@@ -1,7 +1,8 @@
-import React from "react";
 import Grid from "@mui/material/Grid";
 import Gradient from "./gradient";
-import Brush from "./brush";
+import Stepline from "./stepline";
+import Basic from "./basic";
+import Datalabel from "./datalabel";
 
 const Line = () => {
   return (
@@ -11,19 +12,13 @@ const Line = () => {
           <Gradient />
         </Grid>
         <Grid item xs={6}>
-          <Brush />
+          <Stepline />
         </Grid>
         <Grid item xs={6}>
-          h
+          <Basic />
         </Grid>
         <Grid item xs={6}>
-          h
-        </Grid>
-        <Grid item xs={6}>
-          j
-        </Grid>
-        <Grid item xs={6}>
-          y
+          <Datalabel />
         </Grid>
       </Grid>
     </>

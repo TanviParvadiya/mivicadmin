@@ -1,5 +1,6 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import MultipleCC from "./multipleCC";
 
 class Multiple extends React.Component {
   constructor(props) {
@@ -25,7 +26,6 @@ class Multiple extends React.Component {
                 show: true,
                 label: "Total",
                 formatter: function (w) {
-                  // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
                   return 249;
                 },
               },
@@ -33,6 +33,7 @@ class Multiple extends React.Component {
           },
         },
         labels: ["Apples", "Oranges", "Bananas", "Berries"],
+        colors: ["#f50f58", "#074baf", "#00bf48", "#ff6800"],
       },
     };
   }
@@ -49,6 +50,7 @@ class Multiple extends React.Component {
             height={350}
           />
         </div>
+        <MultipleCC/>
       </div>
     );
   }

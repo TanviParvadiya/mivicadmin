@@ -1,15 +1,16 @@
 import "./App.css";
-import { FullScreen, useFullScreenHandle } from "react-full-screen";
+// import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import DashboardTemplate from "./containers/templates/Dashboard";
-function App({}) {
-  const handle = useFullScreenHandle();
+function App() {
+  // const handle = useFullScreenHandle();
+  
   return (
     <div className="App">
-      <FullScreen handle={handle}>
+      {/* <FullScreen handle={handle}> */}
         {/* <Layout />
         <RoutesAuth /> */}
         <DashboardTemplate />
-      </FullScreen>
+      {/* </FullScreen> */}
     </div>
   );
 }

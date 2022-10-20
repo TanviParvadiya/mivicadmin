@@ -1,5 +1,6 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import GradientCC from "./gradientCC";
 
 class Gradient extends React.Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class Gradient extends React.Component {
       ],
       options: {
         chart: {
-          height: 450,
+          height: 350,
           type: "line",
           stacked: false,
           toolbar: {
@@ -72,15 +73,16 @@ class Gradient extends React.Component {
   render() {
     return (
       <div className="theme-box-shadow">
-        <h6 className=""></h6>
+        <h6 className="defultheading">Gradient Line chart</h6>
         <div id="chart">
           <ReactApexChart
             options={this.state.options}
             series={this.state.series}
             type="line"
-            height={450}
+            height={350}
           />
         </div>
+        <GradientCC/>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import SemicircularCC from "./semicircularCC";
 class Semicircular extends React.Component {
   constructor(props) {
     super(props);
@@ -14,13 +15,13 @@ class Semicircular extends React.Component {
             enabled: true,
           },
         },
-        colors: ["#081f55"],
+        colors: ["#e40b7e"],
         plotOptions: {
           radialBar: {
             startAngle: -90,
             endAngle: 90,
             track: {
-              background: "#e7e7e7",
+              background: "#fff",
               strokeWidth: "97%",
               margin: 5, // margin is in pixels
               dropShadow: {
@@ -51,13 +52,16 @@ class Semicircular extends React.Component {
         fill: {
           type: "gradient",
           gradient: {
-            shade: "light",
-            shadeIntensity: 0.4,
-            inverseColors: false,
+            shade: "dark",
+            type: "horizontal",
+            shadeIntensity: 0.5,
+            gradientToColors: ["#6115bf"],
+            inverseColors: true,
             opacityFrom: 1,
             opacityTo: 1,
-            stops: [0, 50, 53, 91],
+            stops: [0, 100],
           },
+         
         },
         labels: ["Average Results"],
       },
@@ -75,6 +79,7 @@ class Semicircular extends React.Component {
             type="radialBar"
           />
         </div>
+        <SemicircularCC/>
       </div>
     );
   }
